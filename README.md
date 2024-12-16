@@ -3,11 +3,20 @@ Finding future outputs of pseudo-random number generator of Java's Random class 
 
 Information:
 
-Assume we don't know the key (to find how the numbers are generated view javaCode.java)
+Assume we don't know the seed inputted to the constructor of Java's Random class.
+
+```
+long secret_seed = //Unknown value
+Random rand = new Random ( secret_seed );
+int n1 = rand.nextInt();
+int n2 = rand.nextInt();
+int n3 = rand.nextInt();
+```
+
 Given the first two outputs of Random.nextInt():
  - n1: -745632980
  - n2: 2066963502
 
-Find the next output of a call to Random.nextInt() and the seed used in the call to new Random(seed).
+We are going to find the value of n3.
 
 
