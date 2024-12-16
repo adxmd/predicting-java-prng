@@ -19,4 +19,6 @@ Given the first two outputs of Random.nextInt():
 
 We are going to find the value of n3.
 
+Use seed outputted after running bruteForce.py as input to getN3.java
+
 
